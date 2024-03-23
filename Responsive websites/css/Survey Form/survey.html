@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Kindly fill this form as per the requirements</p>
+    <form id="survey-form">
+      <fieldset><label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"/>
+        </label>
+        <label id="email-label">Email <input id="email" type="email" required/placeholder="Enter your email"></label>
+        <label id="number-label">Age <input id="number" type="number" min="1" max="2" placeholder="Enter your age"/>
+        </label>
+
+      <label>
+        Select a perfect role:
+        <select id="dropdown">
+          <option value="">Select</option>
+          <option value="1">Designer</option>
+          <option value="2">Frontend Developer</option>
+          <option value="3">Backend Developer</option>
+          
+        </select>
+      </label>
+      <label>Would you recommend to your friend:</label>
+      <label><input type="radio" id="Definitely" checked name="recommend" value="Definitely"/> Definitely</label>
+       <label><input type="radio" id="yes" name="recommend" value="yes"/> Yes</label>
+      <label><input type="radio" id="no" name="recommend" value="no"/> No</label>
+      
+      <label>Select the areas to be improved</label>
+      <label><input  type="checkbox" value="frontend">Frontend Development<label>
+        <label><input type="checkbox" value="backend">Backend Development<label>
+          <label><input type="checkbox" value="cloud">Cloud Development<label>
+            <label><input type="checkbox" value="ml">Machine Learning<label>
+              <label><input type="checkbox" value="projects">Projects<label>
+                <label><input type="checkbox" value="forum">Forum<label>
+            <label>Give us some feedback: <textarea placeholder="Good to practice" rows="3" cols="30"></textarea></label>
+        </fieldset>
+<input type="submit" id="submit">
+
+      
+      </form>
+    </body>
+</html>
